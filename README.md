@@ -31,7 +31,7 @@ The result is rendered to a temporary file and opened:
 
 Pygrapho also works inside jupyter:
 
-INSERT JEAN VALJEAN GRAPH
+![jupyter example](https://raw.githubusercontent.com/dpinney/pygrapho/main/graphic_jupyter.png)
 
 And it works on huge graphs (this one has 10k vertices):
 
