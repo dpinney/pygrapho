@@ -42,6 +42,20 @@ pygrapho.render_file(pygrapho._chord_model_example(), pygrapho._test_options, 'C
 
 ![10k node chord graph](https://raw.githubusercontent.com/dpinney/pygrapho/main/graphic_chord.png)
 
+If you already have a networkx graph, you can convert it automatically:
+
+```python
+import networkx as nx
+import pygrapho
+G = nx.generators.trees.random_tree(100)
+model = pygrapho.convert_networkx(G)
+pygrapho.render_file(model, pygrapho._test_options, 'ForceDirected', open_file=True)
+````
+
+![random tree force directed](https://raw.githubusercontent.com/dpinney/pygrapho/main/graphic_nx_tree.png)
+
+```
+
 If you'd like more information on the various options available, please see the [ElGrapho documentation, v2.4.0](https://github.com/ericdrowell/ElGrapho/tree/cbb44c8f0e8c18d8c12488583442c1feb53d7679). There are lots of different layout and styling types:
 
 ![grapho example renderings](https://raw.githubusercontent.com/ericdrowell/ElGrapho/cbb44c8f0e8c18d8c12488583442c1feb53d7679/img/elgrapho-examples.png)
@@ -54,10 +68,9 @@ Some hints from [jacobstallone](https://github.com/jacobstallone/D3-in-Jupyter-N
 ) on how to get javascript to work well inside notebooks.
 
 ### Todos
-- OOO Fix that screenshot.
 - OOO Publish python module to pypi. E.g. Install python3 and then run `pip install pygrapho`.
-- OOO Convert option for networkx graphs.
 - OOO More tests, CI/CD.
+- OOO Support for networkx position translation.
 - OOO Validate options schema and the model. https://pypi.org/project/schema/
 - OOO Remove fstrings for py2 compatibility.
 - OOO Leaflet with blank canvas: https://stackoverflow.com/questions/28094649/add-option-for-blank-tilelayer-in-leaflet-layergroup 

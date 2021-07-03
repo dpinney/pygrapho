@@ -82,6 +82,15 @@ def render_file(model, options, layout, path=None, open_file=False):
 	if open_file:
 		webbrowser.open_new(f'file://{path}')
 
+def convert_networkx(nx_graph):
+	''' Convert the [nx_graph] to a model that can be used with pygrapho render functions. '''
+	# import networx as nx
+	model = {
+		'nodes': [{'group':0, 'label':x} for x in nx_graph.nodes()],
+		'edges': [{'from':x[0], 'to':x[1]} for x in nx_graph.edges()]
+	}
+	return model
+
 def _chord_model_example():
 	NUM_NODES = 10000;
 	NODE_RAN = range(0, NUM_NODES)
@@ -104,7 +113,7 @@ _test_options = {
 	'debug': False,
 	'darkMode': True,
 	'glowBlend': 0.2,
-	'edgeSize': 0.1,
+	'edgeSize': 1,
 	'fillContainer': True
 }
 
@@ -112,6 +121,7 @@ def _tests():
 	render_file(_manual_example(), _test_options, 'None', open_file=True)
 	render_file(_les_mis_example(), _test_options, 'ForceDirected', open_file=True)
 	render_file(_chord_model_example(), _test_options, 'Chord', open_file=True)
+	convert_networkx(nx_graph)
 
 if __name__ == '__main__':
 	_tests()

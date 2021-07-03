@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # Specific files
-elgrapho testing in jupyter #maybee.ipynb
+elgrapho original prototype in google colab jupyter.ipynb
+pygrapho repo on github.webloc
