@@ -15,5 +15,5 @@ setup(
 	author_email='david@pinney.org',
 	url='https://github.com/dpinney/pygrapho/',
 	packages = ['pygrapho'],
-	include_package_data=True,
+	include_package_data=True
 )
