@@ -14,6 +14,6 @@ setup(
 	author='David Pinney',
 	author_email='david@pinney.org',
 	url='https://github.com/dpinney/pygrapho/',
-	py_modules=['pygrapho'],
-	data_files=[('.','ElGrapho.html'),('.','ElGrapho.2.4.0.min.js')],
+	packages = ['pygrapho'],
+	include_package_data=True,
 )
