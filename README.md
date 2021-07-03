@@ -27,7 +27,7 @@ pygrapho.render_file(graph, options, 'None', open_file=True)
 
 The result is rendered to a temporary file and opened:
 
-![manual graph]('graphic_manual.png')
+![manual graph](https://raw.githubusercontent.com/dpinney/pygrapho/main/graphic_manual.png)
 
 Pygrapho also works inside jupyter:
 
@@ -40,7 +40,7 @@ import pygrapho
 pygrapho.render_file(pygrapho._chord_model_example(), pygrapho._test_options, 'Chord', open_file=True)
 ```
 
-![10k node chord graph](graphic_chord.png')
+![10k node chord graph](https://raw.githubusercontent.com/dpinney/pygrapho/main/graphic_chord.png)
 
 If you'd like more information on the various options available, please see the [ElGrapho documentation, v2.4.0](https://github.com/ericdrowell/ElGrapho/tree/cbb44c8f0e8c18d8c12488583442c1feb53d7679). There are lots of different layout and styling types:
 
