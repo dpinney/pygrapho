@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Specific files
+elgrapho testing in jupyter #maybee.ipynb

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<style>
+			html, body {
+				background-color:#f8f8f8; margin:0; border:0; padding:0; overflow:hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container" STYLING_INSERT_HERE></div>
+		<script>
+ELGRAPHO_LIB
+		</script>
+		<script>
+			let model = MODEL_INSERT_HERE;
+			let graph = new ElGrapho({
+				'container': document.getElementById('container'),
+				'model': MODEL_TYPE_HERE,
+				GRAPHO_OPTIONS_HERE
+			});
+		</script>
+	</body>
+</html>
