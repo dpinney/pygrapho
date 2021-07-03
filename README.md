@@ -50,11 +50,9 @@ import pygrapho
 G = nx.generators.trees.random_tree(100)
 model = pygrapho.convert_networkx(G)
 pygrapho.render_file(model, pygrapho._test_options, 'ForceDirected', open_file=True)
-````
+```
 
 ![random tree force directed](https://raw.githubusercontent.com/dpinney/pygrapho/main/graphic_nx_tree.png)
-
-```
 
 If you'd like more information on the various options available, please see the [ElGrapho documentation, v2.4.0](https://github.com/ericdrowell/ElGrapho/tree/cbb44c8f0e8c18d8c12488583442c1feb53d7679). There are lots of different layout and styling types:
 
